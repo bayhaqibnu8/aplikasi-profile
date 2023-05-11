@@ -1,0 +1,12 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: aplikasi-profile/index.html
+  upload: aplikasi-profile/index.html
+
+- url: /(.*)
+  static_files: aplikasi-profile/\1
+  upload: aplikasi-profile/(.*)
